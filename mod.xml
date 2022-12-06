@@ -1,0 +1,6 @@
+<Mod
+	name="Playable Starts"
+	description="Removes completely unplayable starting loadouts."
+	request_no_api_restrictions="0" 
+> 
+</Mod>
