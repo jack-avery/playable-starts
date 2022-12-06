@@ -1,9 +1,9 @@
 <!-- data\entities\items\pickup\potion_starting.xml -->
 
 <Entity>
-	<Base file="data/entities/items/pickup/potion.xml" >
-		<LuaComponent 
-			script_source_file="mods/playable-starts/files/start/potion_starting.lua" 
-		></LuaComponent>
-	</Base>
+    <Base file="data/entities/items/pickup/potion.xml" >
+        <LuaComponent 
+            script_source_file="mods/playable-starts/files/start/potion_starting.lua" 
+        ></LuaComponent>
+    </Base>
 </Entity>

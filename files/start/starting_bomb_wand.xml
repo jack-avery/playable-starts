@@ -22,8 +22,8 @@
             fire_rate_wait="5" >
         </gunaction_config>
     </AbilityComponent>
-	
-	<HotspotComponent 
+    
+    <HotspotComponent 
         _tags="shoot_pos" 
         offset.x="6" 
         offset.y="-0.5" >
@@ -38,11 +38,11 @@
    </Base>
    
    <LuaComponent 
-		execute_on_added="1"
-		remove_after_executed="1"
-		script_source_file="mods/playable-starts/files/start/starting_bomb_wand.lua"
-		>
-	</LuaComponent>
+        execute_on_added="1"
+        remove_after_executed="1"
+        script_source_file="mods/playable-starts/files/start/starting_bomb_wand.lua"
+        >
+    </LuaComponent>
 
    <Base file="data/entities/base_wand_pickup.xml" > <LuaComponent _enabled="0" script_item_picked_up="" /> </Base>
 
