@@ -1,3 +1,5 @@
+<!-- data\entities\items\pickup\potion_starting.xml -->
+
 <Entity>
 	<Base file="data/entities/items/pickup/potion.xml" >
 		<LuaComponent 

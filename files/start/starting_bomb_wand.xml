@@ -1,3 +1,5 @@
+<!-- data\entities\items\starting_bomb_wand.xml -->
+
 <Entity tags="wand">
 
    <AbilityComponent

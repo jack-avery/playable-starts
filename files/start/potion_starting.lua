@@ -1,3 +1,5 @@
+-- data\scripts\items\potion_starting.lua
+
 dofile_once("data/scripts/lib/utilities.lua")
 dofile_once("data/scripts/items/init_potion.lua")
 

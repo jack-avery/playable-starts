@@ -1,3 +1,5 @@
+<!-- data\entities\items\starting_wand.xml -->
+
 <Entity tags="sacred_wand,wand,first_wand">
 
 	<AbilityComponent 
