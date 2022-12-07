@@ -71,13 +71,7 @@ ComponentSetValue(ability_comp, "mana", mana_max)
 
 local action_count = 1
 
--- start with DYNAMITE by default
-local gun_action = "DYNAMITE"
-
-if (Random(1, 100) < 50) then
-	gun_action = get_random_from(gun.actions)
-end
-
+local gun_action = get_random_from(gun.actions)
 
 for i = 1, action_count do
 	--AddGunActionPermanent( entity_id, gun_action )
