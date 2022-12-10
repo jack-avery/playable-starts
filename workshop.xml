@@ -3,6 +3,8 @@
     description="Removes completely unplayable starting loadouts.
 
     Intended to be subtle enough to not notice most of the time.
+
+    https://github.com/jack-avery/playable-starts
     "
     tags="gameplay,quality of life,loadouts,tweaks"
     dont_upload_folders=""
