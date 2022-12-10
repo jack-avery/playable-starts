@@ -71,7 +71,11 @@ ComponentSetValue(ability_comp, "mana", mana_max)
 
 local action_count = 1
 
-local gun_action = get_random_from(gun.actions)
+local gun_action = "BOMB"
+
+if (Random(1, 100) < 50) then
+	gun_action = get_random_from(gun.actions)
+end
 
 for i = 1, action_count do
 	--AddGunActionPermanent( entity_id, gun_action )

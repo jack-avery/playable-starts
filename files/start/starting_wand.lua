@@ -68,14 +68,19 @@ ComponentObjectSetValue(ability_comp, "gunaction_config", "speed_multiplier", gu
 ComponentSetValue(ability_comp, "mana_max", mana_max)
 ComponentSetValue(ability_comp, "mana", mana_max)
 
--- do not allow single spell in wand (makes fighting not agony!)
-local action_count = math.min(Random(2, 3), tonumber(deck_capacity))
 local gun_action = "LIGHT_BULLET"
 
 if (Random(1, 100) < 50) then
 	gun_action = get_random_from(gun.actions)
 end
 
+-- do not allow single spell in wand if bb or spark bolt (makes fighting not agony!)
+local min = 1
+if (gun_action == "RUBBER_BALL") or (gun_action == "LIGHT_BULLET") then
+	min = 2
+end
+
+local action_count = math.min(Random(min, 3), tonumber(deck_capacity))
 for i = 1, action_count do
 	--AddGunActionPermanent( entity_id, gun_action )
 	AddGunAction(entity_id, gun_action)
